@@ -1,0 +1,6 @@
+galaxy_info:
+  author: parithosh
+  description: haproxy
+  min_ansible_version: 2.1
+  galaxy_tags: []
+dependencies: []
