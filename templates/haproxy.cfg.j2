@@ -40,6 +40,10 @@ frontend stats
     stats auth {{ haproxy_stats_user }}:{{ haproxy_stats_password }}
 
 
+frontend http
+    bind :80
+    redirect scheme https if !{ ssl_fc }
+
 frontend https
     bind :443 ssl crt /etc/certificates/
     mode http
